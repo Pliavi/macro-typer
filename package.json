@@ -10,9 +10,7 @@
         "Other"
     ],
     "activationEvents": [
-        "workspaceContains:.macros.json",
-        "onCommand:extension.nextMacro",
-        "onCommand:extension.reloadMacros"
+        "*"
     ],
     "main": "./out/extension",
     "contributes": {
