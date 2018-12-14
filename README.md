@@ -1,19 +1,6 @@
-\* **I'll put it in english after** *
+# Typewriter Macro Presenter
 
-# Typerwriter Macro Presenter
-
-A partir de um arquivo na sua workspace você pode fazer com o que o próprio editor "digite" alguns códigos pré-determinados, podendo ser usado para uma explicação sem precisar ficar digitando enquanto fala ou o texto aparecer direto na tela de forma artificial.
-
-## Features
-
-
-## Requirements
-
-No requirements
-
-## Extension Settings
-
-Will be some soon
+From a file in your workspace, the editor itself "types" some predetermined codes, you can use for an code presentation without the need of type while speaking or see the text appearing directly on the screen in an artificial way.
 
 ## Known Issues
 
@@ -22,6 +9,9 @@ Will be some soon
 ## Release Notes
 
 ### 0.0.1
+- It just works
 
-It just works
+### 0.0.2
+- Break lines works perfectly now;
+- It calls "format document" command after typing
 
