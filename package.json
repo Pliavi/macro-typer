@@ -1,0 +1,50 @@
+{
+    "name": "macro-presenter",
+    "displayName": "macro-presenter",
+    "description": "Run a list of macros for code presentation",
+    "version": "0.0.1",
+    "engines": {
+        "vscode": "^1.29.1"
+    },
+    "categories": [
+        "Other"
+    ],
+    "activationEvents": [
+        "workspaceContains:.macros.json",
+        "onCommand:extension.nextMacro",
+        "onCommand:extension.reloadMacros"
+    ],
+    "main": "./out/extension",
+    "contributes": {
+        "commands": [
+            {
+                "command": "extension.nextMacro",
+                "title": "Next Macro"
+            },
+            {
+                "command": "extension.reloadMacros",
+                "title": "Reload Macros"
+            }
+        ],
+        "keybindings":[
+            {
+                "command": "extension.nextMacro",
+                "key": "ctrl+numpad6"
+            }
+        ]
+    },
+    "scripts": {
+        "vscode:prepublish": "yarn run compile",
+        "compile": "tsc -p ./",
+        "watch": "tsc -watch -p ./",
+        "postinstall": "node ./node_modules/vscode/bin/install",
+        "test": "yarn run compile && node ./node_modules/vscode/bin/test"
+    },
+    "devDependencies": {
+        "@types/mocha": "^2.2.42",
+        "@types/node": "^8.10.25",
+        "tslint": "^5.8.0",
+        "typescript": "^3.1.4",
+        "vscode": "^1.1.25"
+    }
+}
